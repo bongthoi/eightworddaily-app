@@ -1,0 +1,62 @@
+footer, header, section{ display: block; }
+.banner{ background-color: #11233b; color:white;
+	padding: 10px 20px; font-size:20px;	font-weight: bold; }
+body{ width: auto; margin-left: auto;	margin-right: auto;
+	background-color: #f0f0f0; font-size:16px; }
+select{	border: 1px solid #eee; border-radius: 10px; -moz-appearance: none; -webkit-appearance: none;
+    appearance:none; width: 60px; height: 25px; line-height: 20px;
+    background: #FFF; font-size: 14px; font-weight: 500; color: #333;
+    outline:none; padding-left: 5px; box-shadow: 2px 2px 5px #eee; transition: 0.2s;
+	margin-top:5px; margin-bottom:5px; }
+select:focus, select:hover { box-shadow: 3px 3px 10px #eee; }
+input[type="text"]{	padding:2px 2px; background:white; border:1px black solid;
+	-webkit-border-radius: 5px; border-radius: 5px; 
+	margin-left: 8px; width: 97%;
+}
+input[type="button"]{
+	background-color: #4CAF50; /* Green */
+	border: 2px solid #4CAF50; outline: none; color: white; padding:5px 5px;
+	text-align: center;	text-decoration: none;	display: inline-block;
+	font-size: 12px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin-top:5px; margin-bottom:5px; cursor:pointer;
+	-webkit-border-radius: 10px; border-radius: 10px; margin-left: 8px; }
+input[type="button"]:hover{	background-color: white; color: #4CAF50; }
+section{ background-color:#80ced6; margin-top: 10px; margin-right:10px; margin-left: 8px; padding: 5px; box-shadow: 3px 5px 6px; }
+p{ margin-top:5px; padding:3px; color: #11233b; }
+footer{	margin-top:10px; margin-bottom:30px; margin-left: 100px; clear:both; }
+h2{ font-size: 18px; }
+input[type="button"]{
+	background-color: #4CAF50; /* Green */
+	border: 2px solid #4CAF50; outline: none; color: white; padding:5px 5px;
+	text-align: center;	text-decoration: none;	display: inline-block;
+	font-size: 12px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin-top:5px; margin-bottom:5px; cursor:pointer;
+	-webkit-border-radius: 10px; border-radius: 10px; margin-left: 8px; }
+input[type="button"]:hover{	background-color: white; color: #4CAF50; }
+.input-group-addon.danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 83, 79);
+    border-color: rgb(212, 63, 58);
+}
+.con_giap {
+	/* margin: 0px 3px; */
+	margin-top: 15px;
+}
+
+.input-group-addon.success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 184, 92);
+    border-color: rgb(76, 174, 76);
+}
+
+.click_btn {
+    background: #4CAF50;
+    border: 1px solid #4CAF50;
+    color: #fff;
+    border-radius: 10px;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+.navbar-inverse .navbar-nav>li>a {
+	font-size: 16px;
+}

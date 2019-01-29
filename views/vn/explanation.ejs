@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bát Tự</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/vn/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/caleightmansionfs1.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/vn/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/vn/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/vn/css/calculater.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/vn/js/index.js"></script>
+    <script type="text/javascript" src="/vn/js/alerttoday.js"></script>
+    <script type="text/javascript" src="/vn/js/eightwords.js"></script>
+    <script type="text/javascript" src="/vn/js/vn/eightwords2.js"></script>
+    <script type="text/javascript" src="/vn/js/vn/eightwords3.js"></script>
+    <script type="text/javascript">
+        function hideandshow() {
+            document.getElementById("secshowelements").style.display = 'none';
+            document.getElementById("secshowtamtus").style.display = 'none';
+            document.getElementById("btnexplain").style.display = 'none';
+            document.getElementById("secexplain").style.display = 'none';
+            var vtoday = findtoday();
+            // alert("Hello");
+            var vtiendi = (checkdayearthsky(vtoday.substring(0, 4), vtoday.substring(4)));
+            var n = vtiendi.indexOf("-");
+            var vtienelement = checktienelement(vtiendi.substring(1, n));
+            var vdielement = checkdielement(vtiendi.substring(n + 1));
+            var dayelements = vtienelement + "-" + vdielement;
+            document.getElementById("showtodayelements").value = vtiendi.substring(1) + " => " + dayelements;
+            //alert(vtiendi + " => " + dayelements);
+        }
+    </script>
+    <style>
+        section {
+            background: url('/vn/images/hoatiet-lich-29.png') repeat;
+        }
+    </style>
+</head>
+
+<body onload="hideandshow()">
+    <div class="container ">
+        <header>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 xol-md-12">
+                    <img src="/vn/images/logo.png" alt="" width="200px" ; height="auto">
+                </div>
+            </div>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid nav_background">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/vn"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/vn">Trang Chủ</a></li>
+                            <li><a href="/vn/explanation">Giải Trình</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right flag">
+                            <li><a href="/vn"><span><img src="/vn/images/vn.png" height="15px" width="20px"></span>| </a></li>
+                            <li><a href="/cn"><span><img src="/vn/images/cn.jpg" height="15px" width="20px"></span>|</a></li>
+                            <li><a href="/en"><span><img src="/vn/images/en.jpg" height="15px" width="20px"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content_Feng_Shui">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="col-md-1"></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <h2>TÁM TỪ MÁY TÍNH</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-7 content_Feng_Shui_cl">
+                        <div class="col-xs-2 col-sm-2 col-md-2 cl">
+                            <hr />
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 cl cl_green">
+                            <hr />
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 cl cl_blue">
+                            <hr />
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 cl cl_red">
+                            <hr />
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 cl cl_brown">
+                            <hr />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <section>
+                        <h3>Ngũ hành của bạn</h3>
+                        <p>
+                        Nhật can (tức là chữ đầu tiên trong ngũ hành ngày sinh) của bạn chính là ngũ hành của bạn<br>
+                        Ngũ hành đóng vai trò quan trọng bát tự.<br>
+                        Ngũ hành nói lên những gì bạn thích, những gì bạn ghét, những gì đem lại lợi ích cho bạn, những gì đối với bạn là không tốt…<br>
+                        Ngũ hành gồm 5 vật chất là kim, mộc, thủy, hỏa, thổ.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Mối quan hệ được thể hiện qua các chữ còn lại</h3>
+                        <p>
+                        Bảy chữ khác trong bát tự đại diện cho mối quan hệ giữa những người xung quanh với bạn.<br>
+                        Hai chữ trong ngũ hành năm sinh đại diện cho mối quan hệ giữa bạn và cha mẹ hoặc trưởng bối.<br>
+                        Hai chữ trong ngũ hành tháng sinh đại diện cho mối quan hệ giữa bạn và anh chị em hoặc bạn bè.<br>
+                        Ngũ hành địa chi (chữ thứ 2) đại diện cho mối quan hệ giữa bạn và chồng/vợ.<br>
+                        Hai chữ trong ngũ hành giờ sinh đãi diện cho mối quan hệ giữa bạn và con cái hoặc với hậu bối.<br>
+                        Bằng cách tìm hiểu mối quan hệ giữa các yếu tố xung quanh, bạn có thể vạch ra một bức tranh
+                        Tìm ra sự tương sinh tương khắc trong các chữ trong ngũ hành của bạn sẽ vẽ được sơ đồ các mối quan hệ trong cuộc đời bạn, từ đó tìm được mối quan hệ có ích đến bạn, tránh việc hung và thúc đẩy việc lành đến với bạn sớm hơn.</p>
+                        <h3>Như là:</h3>
+                        <p>
+                        Thiên can ngày sinh của bạn là thổ, thiên can địa chi năm sinh lại là hỏa, thì người trợ lực giúp cho bạn có thể sẽ là cha mẹ hoặc trưởng bối.<br>
+                        Ngược lại thiên can hoặc địa chi tháng sinh là mộc, thì anh em hoặc bạn bè chưa chắc gì có thể trợ giúp được bạn.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Cuộc sống năm yếu tố</h3>
+                        <p>
+                        Trong lý thuyết Tám từ, mọi thứ đại diện cho 5 yếu tố.<br>
+                        Màu sắc có 5 yếu tố--Nước: Xanh hoặc đen; Kim: trắng; Gỗ: xanh; Dất: vàng; Lửa: Đỏ.<br>
+                        Hình dạng có 5 yếu tố--Nước: Đường cong; Kim: vuông; Gỗ: Hình chữ nhật; Dất: Vòng tròn; Lửa: Tam giác.<br>
+                        Thức ăn có 5 yếu tố.<br>
+                        Âm nhạc có 5 yếu tố.<br>
+                        Chọn các yếu tố phù hợp có thể giúp bạn tăng cường năng lượng của bạn. </p>
+                    </section>
+                    <section>
+                        <h3>Mối quan hệ của Ngũ hành</h3>
+                        <p>
+                        Cơ bản là như thế này:<br>
+                        Kim loại như đất nhưng ghét Lửa.<br>
+                        Gỗ thích nước nhưng ghét kim loại.<br>
+                        Nước như Kim loại nhưng ghét đất.<br>
+                        Lửa như Gỗ nhưng ghét Nước.<br>
+                        Dất như Lửa nhưng ghét Gỗ.</p>
+                    </section>
+                    
+                </div>
+               
+            </div>
+            <div class="col-md-12" style="margin-top: 15px;">
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/ty.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/suu.png" alt="" width="60px" height="60px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/dan.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/meo.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/thin.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/ti.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/ngo.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/mui.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/than.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/dau.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/tuat.png" alt="" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 con_giap">
+                    <img src="/vn/images/hoi.png" alt="" width="80px" height="80px">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="footer">
+            <div class="col-xs-12 col-sm-12 col-md-12 footer_background">
+                <div class="footer_left">
+                    <div class="col-xs-12 col-sm-2 col-md-1"></div>
+                    <div class="col-xs-12 col-sm-2 col-md-2">
+                        <img src="/vn/images/logo.png" alt="" width="120px" ; height="50px">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="footer_center">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="row">
+                            <h4>TÁM TỪ MÁY TÍNH</h4>
+                            <div class="footer_address">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="row">
+                            <h4>八字</h4>
+                            <div class="footer_address">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

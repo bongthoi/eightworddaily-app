@@ -1,0 +1,21 @@
+.content_background {
+    background-image: url("../vn/images/background.png");
+}
+.content_left  {
+    text-align: left;
+    color: #000;
+}
+.content_right  {
+    text-align: right;
+    color: #000;
+    float: right;
+}
+.content_right .right h3 {
+    margin-right: 15px;
+}
+.content_left .left h3 {
+    margin-left: 15px;
+}
+.content_background .button button {
+    margin: 15px;
+}

@@ -1,0 +1,5 @@
+{
+    "api_ip":"http://localhost",
+    "api_port":"3300",
+    "api_url":"/api/"
+}
